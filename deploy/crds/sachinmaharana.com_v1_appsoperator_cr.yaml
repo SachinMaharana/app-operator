@@ -1,0 +1,8 @@
+apiVersion: sachinmaharana.com/v1
+kind: AppsOperator
+metadata:
+  name: example-appsoperator
+spec:
+  # Add fields here
+  size: 1
+  title: "Custom Dashboard"
