@@ -7,6 +7,9 @@ OPERATOR_NAME=app-operator
 
 operator-sdk new $OPERATOR_NAME --repo github.com/sachinmaharana/appsoperator
 
+// In case of bitbucket error 404 Not Found, in go.mod
+replace bitbucket.org/ww/goautoneg => github.com/munnerz/goautoneg v0.0.0-20120707110453-a547fc61f48d
+
 operator-sdk add api --api-version=sachinmaharana.com/v1 --kind=AppsOperator
 
 operator-sdk add api --api-version=sachinmaharana.com/v1 --kind=AppsOperator
